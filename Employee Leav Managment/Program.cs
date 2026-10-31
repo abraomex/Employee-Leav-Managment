@@ -1,3 +1,5 @@
+using Employee_Leav_Managment.views;
+
 namespace Employee_Leav_Managment
 {
     internal static class Program
@@ -11,7 +13,13 @@ namespace Employee_Leav_Managment
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            using Login login = new();
+
+            if (login.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Form1());
+            }
         }
     }
 }
