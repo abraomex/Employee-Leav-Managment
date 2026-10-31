@@ -42,45 +42,7 @@ namespace Employee_Leav_Managment
             OpenView(new Dashbord());
         }
 
-        private void employee_Click(object sender, EventArgs e)
-        {
-            OpenView(new Employee());
-        }
-
-        private void Departments_Click(object sender, EventArgs e)
-        {
-            OpenView(new Departments());
-        }
-
-        private void UserRoles_Click(object sender, EventArgs e)
-        {
-            OpenView(new User_Roles());
-        }
-
-        private void LeaveRequests_Click(object sender, EventArgs e)
-        {
-            OpenView(new Leave_Request());
-        }
-
-        private void Approval_Click(object sender, EventArgs e)
-        {
-            OpenView(new Approvals());
-        }
-
-        private void ClearanceDesk_Click(object sender, EventArgs e)
-        {
-            OpenView(new Clearance_desk());
-        }
-
-        private void Configuration_Click(object sender, EventArgs e)
-        {
-            OpenView(new Configration());
-        }
-
-        private void Report_Click(object sender, EventArgs e)
-        {
-            OpenView(new Reports());
-        }
+       
 
         private void label1_Click(object sender, EventArgs e)
         {

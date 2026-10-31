@@ -28,33 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            number = new DataGridViewTextBoxColumn();
+            age = new DataGridViewTextBoxColumn();
+            name = new DataGridViewTextBoxColumn();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // number
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(340, 213);
-            label1.Name = "label1";
-            label1.Size = new Size(58, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Dashbord";
+            number.HeaderText = "Column1";
+            number.Name = "number";
+            // 
+            // age
+            // 
+            age.HeaderText = "Column1";
+            age.Name = "age";
+            // 
+            // name
+            // 
+            name.HeaderText = "Column1";
+            name.Name = "name";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { name, age, number });
+            dataGridView1.Location = new Point(1, -1);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(802, 450);
+            dataGridView1.TabIndex = 1;
             // 
             // Dashbord
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(dataGridView1);
             Name = "Dashbord";
             Text = "Dashbord";
             Load += Dashbord_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private DataGridViewTextBoxColumn number;
+        private DataGridViewTextBoxColumn age;
+        private DataGridViewTextBoxColumn name;
+        private DataGridView dataGridView1;
     }
 }
