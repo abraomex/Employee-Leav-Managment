@@ -14,10 +14,5 @@ namespace Employee_Leav_Managment.views
         {
             InitializeComponent();
         }
-
-        private void Dashbord_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
