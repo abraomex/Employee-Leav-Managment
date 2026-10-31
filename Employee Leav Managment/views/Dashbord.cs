@@ -8,6 +8,7 @@ using System.Windows.Forms;
 
 namespace Employee_Leav_Managment.views
 {
+    // Dashboard layout and statistic cards
     public partial class Dashbord : Form
     {
         public Dashbord()
