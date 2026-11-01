@@ -50,7 +50,8 @@
             // 
             // button1
             // 
-            button1.Location = new Point(670, 9);
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.Location = new Point(1019, 9);
             button1.Name = "button1";
             button1.Size = new Size(118, 23);
             button1.TabIndex = 19;
@@ -63,7 +64,7 @@
             textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Search name or employee code";
-            textBox1.Size = new Size(108, 23);
+            textBox1.Size = new Size(220, 23);
             textBox1.TabIndex = 16;
             // 
             // comboBox2
@@ -94,11 +95,12 @@
             dataGridView3.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView3.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn9, dataGridViewTextBoxColumn8, Column1, Column4, dataGridViewTextBoxColumn10, dataGridViewTextBoxColumn11, dataGridViewTextBoxColumn12, dataGridViewTextBoxColumn13, dataGridViewTextBoxColumn14, dataGridViewTextBoxColumn15, Column11 });
-            dataGridView3.Location = new Point(4, 37);
+            dataGridView3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView3.Location = new Point(12, 45);
             dataGridView3.Margin = new Padding(2);
             dataGridView3.Name = "dataGridView3";
             dataGridView3.RowHeadersWidth = 62;
-            dataGridView3.Size = new Size(800, 412);
+            dataGridView3.Size = new Size(1119, 680);
             dataGridView3.TabIndex = 20;
             // 
             // dataGridViewTextBoxColumn9
@@ -176,7 +178,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(dataGridView3);
             Controls.Add(button1);
             Controls.Add(textBox1);

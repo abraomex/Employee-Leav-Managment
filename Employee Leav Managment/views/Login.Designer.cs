@@ -97,11 +97,12 @@
             Controls.Add(passwordLabel);
             Controls.Add(usernameTextBox);
             Controls.Add(usernameLabel);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MaximizeBox = false;
+            FormBorderStyle = FormBorderStyle.Sizable;
+            MaximizeBox = true;
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
+            WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
             PerformLayout();
         }

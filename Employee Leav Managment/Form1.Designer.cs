@@ -232,7 +232,9 @@
             Controls.Add(panel1);
             Controls.Add(groupBox1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            WindowState = FormWindowState.Maximized;
             Load += Form1_Load;
             panel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);

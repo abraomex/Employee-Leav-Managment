@@ -1,60 +1,248 @@
-﻿namespace Employee_Leav_Managment.views
+namespace Employee_Leav_Managment.views
 {
     partial class Configration
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
-            if (disposing && (components != null))
+            if (disposing && components != null)
             {
                 components.Dispose();
             }
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            configTabs = new TabControl();
+            saveLeave = new Button();
+            leaveTab = new TabPage();
+            leaveCategoryLabel = new Label();
+            leaveCategory = new ComboBox();
+            requireAttachment = new CheckBox();
+            requireClearance = new CheckBox();
+            allowCarryOver = new CheckBox();
+            approvalTab = new TabPage();
+            approverLabel = new Label();
+            approverRole = new ComboBox();
+            addApprover = new Button();
+            bypassApproval = new CheckBox();
+            sequentialApproval = new RadioButton();
+            parallelApproval = new RadioButton();
+            stepsLabel = new Label();
+            approverSteps = new ListBox();
+            moveUp = new Button();
+            moveDown = new Button();
+            saveApproval = new Button();
+            clearanceTab = new TabPage();
+            departmentLabel = new Label();
+            clearanceDepartment = new ComboBox();
+            addDepartment = new Button();
+            departmentsLabel = new Label();
+            clearanceDepartments = new ListBox();
+            clearanceItemLabel = new Label();
+            clearanceItem = new TextBox();
+            addItem = new Button();
+            itemsLabel = new Label();
+            clearanceItems = new ListBox();
+            bypassClearance = new CheckBox();
+            sequentialClearance = new RadioButton();
+            parallelClearance = new RadioButton();
+            saveClearance = new Button();
+            configTabs.SuspendLayout();
+            leaveTab.SuspendLayout();
+            approvalTab.SuspendLayout();
+            clearanceTab.SuspendLayout();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(320, 213);
-            label1.Name = "label1";
-            label1.Size = new Size(81, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Configuration";
-            // 
-            // Configration
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+
+            configTabs.Dock = DockStyle.Fill;
+            configTabs.Padding = new Point(14, 6);
+            configTabs.SizeMode = TabSizeMode.Fixed;
+            configTabs.ItemSize = new Size(170, 34);
+            configTabs.Controls.Add(leaveTab);
+            configTabs.Controls.Add(approvalTab);
+            configTabs.Controls.Add(clearanceTab);
+            configTabs.SelectedIndex = 0;
+
+            leaveTab.Text = "Leave Settings";
+            leaveTab.Padding = new Padding(30);
+            leaveCategoryLabel.AutoSize = true;
+            leaveCategoryLabel.Location = new Point(30, 30);
+            leaveCategoryLabel.Text = "Leave category";
+            leaveCategory.DropDownStyle = ComboBoxStyle.DropDownList;
+            leaveCategory.Location = new Point(160, 26);
+            leaveCategory.Size = new Size(240, 33);
+            requireAttachment.AutoSize = true;
+            requireAttachment.Location = new Point(30, 95);
+            requireAttachment.Text = "Require attachment";
+            requireClearance.AutoSize = true;
+            requireClearance.Location = new Point(30, 140);
+            requireClearance.Text = "Require clearance";
+            allowCarryOver.AutoSize = true;
+            allowCarryOver.Location = new Point(30, 185);
+            allowCarryOver.Text = "Allow carry over";
+            saveLeave.Location = new Point(520, 26);
+            saveLeave.Size = new Size(110, 34);
+            saveLeave.Text = "Save";
+            leaveTab.Controls.Add(leaveCategoryLabel);
+            leaveTab.Controls.Add(leaveCategory);
+            leaveTab.Controls.Add(requireAttachment);
+            leaveTab.Controls.Add(requireClearance);
+            leaveTab.Controls.Add(allowCarryOver);
+            leaveTab.Controls.Add(saveLeave);
+
+            approvalTab.Text = "Approval Workflow";
+            approvalTab.Padding = new Padding(30);
+            approverLabel.AutoSize = true;
+            approverLabel.Location = new Point(30, 30);
+            approverLabel.Text = "Approver";
+            approverRole.DropDownStyle = ComboBoxStyle.DropDownList;
+            approverRole.Location = new Point(110, 26);
+            approverRole.Size = new Size(260, 33);
+            addApprover.Location = new Point(390, 26);
+            addApprover.Size = new Size(110, 34);
+            addApprover.Text = "Add Step";
+            bypassApproval.AutoSize = true;
+            bypassApproval.Location = new Point(30, 85);
+            bypassApproval.Text = "Allow bypass";
+            sequentialApproval.AutoSize = true;
+            sequentialApproval.Location = new Point(190, 85);
+            sequentialApproval.Text = "Sequential";
+            parallelApproval.AutoSize = true;
+            parallelApproval.Location = new Point(310, 85);
+            parallelApproval.Text = "Parallel";
+            stepsLabel.AutoSize = true;
+            stepsLabel.Location = new Point(30, 135);
+            stepsLabel.Text = "Approver steps";
+            approverSteps.Location = new Point(30, 165);
+            approverSteps.Size = new Size(470, 450);
+            moveUp.Location = new Point(525, 165);
+            moveUp.Size = new Size(110, 34);
+            moveUp.Text = "Move Up";
+            moveDown.Location = new Point(525, 210);
+            moveDown.Size = new Size(110, 34);
+            moveDown.Text = "Move Down";
+            saveApproval.Location = new Point(525, 260);
+            saveApproval.Size = new Size(110, 34);
+            saveApproval.Text = "Save";
+            approvalTab.Controls.Add(approverLabel);
+            approvalTab.Controls.Add(approverRole);
+            approvalTab.Controls.Add(addApprover);
+            approvalTab.Controls.Add(bypassApproval);
+            approvalTab.Controls.Add(sequentialApproval);
+            approvalTab.Controls.Add(parallelApproval);
+            approvalTab.Controls.Add(stepsLabel);
+            approvalTab.Controls.Add(approverSteps);
+            approvalTab.Controls.Add(moveUp);
+            approvalTab.Controls.Add(moveDown);
+            approvalTab.Controls.Add(saveApproval);
+
+            clearanceTab.Text = "Clearance Settings";
+            clearanceTab.Padding = new Padding(30);
+            departmentLabel.AutoSize = true;
+            departmentLabel.Location = new Point(30, 30);
+            departmentLabel.Text = "Department";
+            clearanceDepartment.DropDownStyle = ComboBoxStyle.DropDownList;
+            clearanceDepartment.Location = new Point(130, 26);
+            clearanceDepartment.Size = new Size(230, 33);
+            addDepartment.Location = new Point(380, 26);
+            addDepartment.Size = new Size(140, 34);
+            addDepartment.Text = "Add Department";
+            departmentsLabel.AutoSize = true;
+            departmentsLabel.Location = new Point(30, 90);
+            departmentsLabel.Text = "Departments";
+            clearanceDepartments.Location = new Point(30, 120);
+            clearanceDepartments.Size = new Size(360, 350);
+            clearanceItemLabel.AutoSize = true;
+            clearanceItemLabel.Location = new Point(450, 30);
+            clearanceItemLabel.Text = "Clearance item";
+            clearanceItem.Location = new Point(550, 26);
+            clearanceItem.Size = new Size(230, 31);
+            addItem.Location = new Point(795, 26);
+            addItem.Size = new Size(100, 34);
+            addItem.Text = "Add Item";
+            itemsLabel.AutoSize = true;
+            itemsLabel.Location = new Point(450, 90);
+            itemsLabel.Text = "Items";
+            clearanceItems.Location = new Point(450, 120);
+            clearanceItems.Size = new Size(360, 350);
+            bypassClearance.AutoSize = true;
+            bypassClearance.Location = new Point(30, 510);
+            bypassClearance.Text = "Allow clearance bypass";
+            sequentialClearance.AutoSize = true;
+            sequentialClearance.Location = new Point(280, 510);
+            sequentialClearance.Text = "Sequential";
+            parallelClearance.AutoSize = true;
+            parallelClearance.Location = new Point(400, 510);
+            parallelClearance.Text = "Parallel";
+            saveClearance.Location = new Point(540, 510);
+            saveClearance.Size = new Size(110, 34);
+            saveClearance.Text = "Save";
+            clearanceTab.Controls.Add(departmentLabel);
+            clearanceTab.Controls.Add(clearanceDepartment);
+            clearanceTab.Controls.Add(addDepartment);
+            clearanceTab.Controls.Add(departmentsLabel);
+            clearanceTab.Controls.Add(clearanceDepartments);
+            clearanceTab.Controls.Add(clearanceItemLabel);
+            clearanceTab.Controls.Add(clearanceItem);
+            clearanceTab.Controls.Add(addItem);
+            clearanceTab.Controls.Add(itemsLabel);
+            clearanceTab.Controls.Add(clearanceItems);
+            clearanceTab.Controls.Add(bypassClearance);
+            clearanceTab.Controls.Add(sequentialClearance);
+            clearanceTab.Controls.Add(parallelClearance);
+            clearanceTab.Controls.Add(saveClearance);
+
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            ClientSize = new Size(1143, 750);
+            Controls.Add(configTabs);
             Name = "Configration";
-            Text = "Configration";
-            Load += Configration_Load;
+            Text = "Configuration";
+            configTabs.ResumeLayout(false);
+            leaveTab.ResumeLayout(false);
+            leaveTab.PerformLayout();
+            approvalTab.ResumeLayout(false);
+            approvalTab.PerformLayout();
+            clearanceTab.ResumeLayout(false);
+            clearanceTab.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
-        #endregion
-
-        private Label label1;
+        private TabControl configTabs;
+        private TabPage leaveTab;
+        private TabPage approvalTab;
+        private TabPage clearanceTab;
+        private Label leaveCategoryLabel;
+        private ComboBox leaveCategory;
+        private CheckBox requireAttachment;
+        private CheckBox requireClearance;
+        private CheckBox allowCarryOver;
+        private Button saveLeave;
+        private Label approverLabel;
+        private ComboBox approverRole;
+        private Button addApprover;
+        private CheckBox bypassApproval;
+        private RadioButton sequentialApproval;
+        private RadioButton parallelApproval;
+        private Label stepsLabel;
+        private ListBox approverSteps;
+        private Button moveUp;
+        private Button moveDown;
+        private Button saveApproval;
+        private Label departmentLabel;
+        private ComboBox clearanceDepartment;
+        private Button addDepartment;
+        private Label departmentsLabel;
+        private ListBox clearanceDepartments;
+        private Label clearanceItemLabel;
+        private TextBox clearanceItem;
+        private Button addItem;
+        private Label itemsLabel;
+        private ListBox clearanceItems;
+        private CheckBox bypassClearance;
+        private RadioButton sequentialClearance;
+        private RadioButton parallelClearance;
+        private Button saveClearance;
     }
 }

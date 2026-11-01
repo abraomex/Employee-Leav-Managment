@@ -88,7 +88,7 @@
             leaveRequestTab.Name = "leaveRequestTab";
             leaveRequestTab.Padding = new Point(18, 6);
             leaveRequestTab.SelectedIndex = 0;
-            leaveRequestTab.Size = new Size(772, 408);
+            leaveRequestTab.Size = new Size(1119, 710);
             leaveRequestTab.TabIndex = 1;
             // 
             // tabPage2
@@ -102,14 +102,15 @@
             tabPage2.Margin = new Padding(2);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(8, 7, 8, 7);
-            tabPage2.Size = new Size(764, 374);
+            tabPage2.Size = new Size(1111, 672);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "MY";
+            tabPage2.Text = "My Requests";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(635, 4);
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.Location = new Point(975, 8);
             button1.Name = "button1";
             button1.Size = new Size(118, 23);
             button1.TabIndex = 12;
@@ -122,7 +123,7 @@
             textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Search name or employee code";
-            textBox1.Size = new Size(108, 23);
+            textBox1.Size = new Size(220, 23);
             textBox1.TabIndex = 8;
             // 
             // comboBox2
@@ -157,9 +158,9 @@
             pnlTotalLeave.Margin = new Padding(2);
             pnlTotalLeave.Name = "pnlTotalLeave";
             pnlTotalLeave.Padding = new Padding(8, 7, 8, 7);
-            pnlTotalLeave.Size = new Size(764, 374);
+            pnlTotalLeave.Size = new Size(1111, 672);
             pnlTotalLeave.TabIndex = 2;
-            pnlTotalLeave.Text = "Leave Type";
+            pnlTotalLeave.Text = "Leave Types";
             pnlTotalLeave.UseVisualStyleBackColor = true;
             // 
             // tabPage1
@@ -170,14 +171,15 @@
             tabPage1.Location = new Point(4, 30);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(764, 374);
+            tabPage1.Size = new Size(1111, 672);
             tabPage1.TabIndex = 3;
-            tabPage1.Text = "Entitlments";
+            tabPage1.Text = "Entitlements";
             tabPage1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(635, 3);
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button2.Location = new Point(975, 8);
             button2.Name = "button2";
             button2.Size = new Size(118, 23);
             button2.TabIndex = 15;
@@ -187,14 +189,15 @@
             // dataGridView2
             // 
             dataGridView2.AllowUserToAddRows = false;
+            dataGridView2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4, dataGridViewTextBoxColumn5, dataGridViewTextBoxColumn6, dataGridViewTextBoxColumn7 });
-            dataGridView2.Location = new Point(2, 30);
+            dataGridView2.Location = new Point(8, 42);
             dataGridView2.Margin = new Padding(2);
             dataGridView2.Name = "dataGridView2";
             dataGridView2.RowHeadersWidth = 62;
-            dataGridView2.Size = new Size(760, 341);
+            dataGridView2.Size = new Size(1090, 620);
             dataGridView2.TabIndex = 14;
             // 
             // textBox2
@@ -209,14 +212,15 @@
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column5, Column7, Column6, Column8, Column9, Column10 });
-            dataGridView1.Location = new Point(2, 32);
+            dataGridView1.Location = new Point(8, 42);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(760, 340);
+            dataGridView1.Size = new Size(1090, 620);
             dataGridView1.TabIndex = 15;
             // 
             // Column1
@@ -307,7 +311,8 @@
             // 
             // button3
             // 
-            button3.Location = new Point(630, 5);
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button3.Location = new Point(975, 8);
             button3.Name = "button3";
             button3.Size = new Size(118, 23);
             button3.TabIndex = 17;
@@ -328,12 +333,13 @@
             dataGridView3.AllowUserToAddRows = false;
             dataGridView3.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView3.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn9, dataGridViewTextBoxColumn8, Column4, dataGridViewTextBoxColumn10, dataGridViewTextBoxColumn11, dataGridViewTextBoxColumn12, dataGridViewTextBoxColumn13, dataGridViewTextBoxColumn14, dataGridViewTextBoxColumn15, Column11 });
-            dataGridView3.Location = new Point(0, 33);
+            dataGridView3.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn9, dataGridViewTextBoxColumn8, Column4, dataGridViewTextBoxColumn11, dataGridViewTextBoxColumn12, dataGridViewTextBoxColumn13, dataGridViewTextBoxColumn14, dataGridViewTextBoxColumn15 });
+            dataGridView3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView3.Location = new Point(8, 42);
             dataGridView3.Margin = new Padding(2);
             dataGridView3.Name = "dataGridView3";
             dataGridView3.RowHeadersWidth = 62;
-            dataGridView3.Size = new Size(762, 339);
+            dataGridView3.Size = new Size(1100, 650);
             dataGridView3.TabIndex = 18;
             // 
             // dataGridViewTextBoxColumn9
@@ -353,12 +359,6 @@
             Column4.HeaderText = "Department";
             Column4.MinimumWidth = 8;
             Column4.Name = "Column4";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            dataGridViewTextBoxColumn10.HeaderText = "Leave Type";
-            dataGridViewTextBoxColumn10.MinimumWidth = 8;
-            dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
             // dataGridViewTextBoxColumn11
             // 
@@ -386,16 +386,11 @@
             dataGridViewTextBoxColumn15.HeaderText = "Used";
             dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
             // 
-            // Column11
-            // 
-            Column11.HeaderText = "Utilization";
-            Column11.Name = "Column11";
-            // 
             // Leave_Request
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(leaveRequestTab);
             Name = "Leave_Request";
             Text = "Leave_Request";
@@ -410,6 +405,9 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
+            button1.BringToFront();
+            button2.BringToFront();
+            button3.BringToFront();
             ResumeLayout(false);
         }
 

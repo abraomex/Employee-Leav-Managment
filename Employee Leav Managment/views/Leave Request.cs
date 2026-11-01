@@ -34,9 +34,6 @@ namespace Employee_Leav_Managment.views
             textBox2.TextChanged += LeaveTypeFilterChanged;
             button2.Click += NewTypeButton_Click;
 
-            AddEntitlementRow("EMP001", "Employee 1", "Department 1", "Annual Leave", "20", "2", "0", "22", "3", "14%");
-            AddEntitlementRow("EMP002", "Employee 2", "Department 2", "Sick Leave", "10", "0", "1", "11", "2", "18%");
-            AddEntitlementRow("EMP003", "Employee 3", "Department 3", "Annual Leave", "20", "1", "0", "21", "5", "24%");
             textBox3.TextChanged += EntitlementFilterChanged;
             button3.Click += GenerateButton_Click;
         }
@@ -165,9 +162,10 @@ namespace Employee_Leav_Managment.views
             LeaveTypeFilterChanged(null, EventArgs.Empty);
         }
 
-        private void AddEntitlementRow(string employeeCode, string name, string department, string leaveType, string baseDays, string carryDays, string bonusDays, string totalDays, string usedDays, string utilization)
+        private void AddEntitlementRow(string employeeCode, string name, string department, string baseDays, string carryDays, string bonusDays, string totalDays, string usedDays)
         {
-            dataGridView3.Rows.Add(employeeCode, name, department, leaveType, baseDays, carryDays, bonusDays, totalDays, usedDays, utilization);
+            int rowIndex = dataGridView3.Rows.Add(employeeCode, name, department, baseDays, carryDays, bonusDays, totalDays, usedDays);
+            dataGridView3.Rows[rowIndex].Visible = true;
         }
 
         private void EntitlementFilterChanged(object? sender, EventArgs e)
@@ -197,13 +195,22 @@ namespace Employee_Leav_Managment.views
                 return;
             }
 
-            AddEntitlementRow(dialog.EmployeeCode, dialog.EmployeeName, dialog.Department, dialog.LeaveType, "20", "0", "0", "20", "0", "0%");
+            AddEntitlementRow(dialog.EmployeeCode, dialog.EmployeeName, dialog.Department, "20", "0", "0", "20", "0");
             EntitlementFilterChanged(null, EventArgs.Empty);
         }
 
         private void Leave_Request_Load(object sender, EventArgs e)
         {
-
+            AddEntitlementRow("EMP001", "Employee 1", "Department 1", "20", "2", "0", "22", "3");
+            AddEntitlementRow("EMP002", "Employee 2", "Department 2", "10", "0", "1", "11", "2");
+            AddEntitlementRow("EMP003", "Employee 3", "Department 3", "20", "1", "0", "21", "5");
+            AddEntitlementRow("EMP004", "Employee 4", "Department 4", "5", "0", "0", "5", "1");
+            dataGridView3.Location = new Point(8, 42);
+            dataGridView3.Size = new Size(tabPage1.ClientSize.Width - 16, tabPage1.ClientSize.Height - 50);
+            dataGridView3.Visible = true;
+            dataGridView3.BringToFront();
+            textBox3.BringToFront();
+            button3.BringToFront();
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)

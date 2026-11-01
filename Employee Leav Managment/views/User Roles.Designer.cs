@@ -44,7 +44,7 @@
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column7 });
@@ -52,7 +52,7 @@
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(781, 387);
+            dataGridView1.Size = new Size(1127, 687);
             dataGridView1.TabIndex = 9;
             // 
             // textBox1
@@ -77,11 +77,12 @@
             // 
             // button1
             // 
-            button1.Location = new Point(684, 9);
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.Location = new Point(1031, 9);
             button1.Name = "button1";
             button1.Size = new Size(104, 23);
             button1.TabIndex = 12;
-            button1.Text = "+ Create Role";
+            button1.Text = "New Role";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -125,7 +126,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
             Controls.Add(textBox1);

@@ -51,11 +51,12 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3, Column4, Column5, Column7, Column6, Column8, Column9, Column10 });
-            dataGridView1.Location = new Point(10, 53);
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.Location = new Point(12, 55);
             dataGridView1.Margin = new Padding(2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(781, 387);
+            dataGridView1.Size = new Size(1119, 680);
             dataGridView1.TabIndex = 14;
             // 
             // textBox1
@@ -64,7 +65,7 @@
             textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Search name or Clearance";
-            textBox1.Size = new Size(129, 23);
+            textBox1.Size = new Size(220, 23);
             textBox1.TabIndex = 13;
             // 
             // compStatus
@@ -75,7 +76,7 @@
             compStatus.Location = new Point(143, 12);
             compStatus.Margin = new Padding(2);
             compStatus.Name = "compStatus";
-            compStatus.Size = new Size(129, 23);
+            compStatus.Size = new Size(180, 23);
             compStatus.TabIndex = 15;
             // 
             // comboBox1
@@ -86,7 +87,7 @@
             comboBox1.Location = new Point(276, 12);
             comboBox1.Margin = new Padding(2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(129, 23);
+            comboBox1.Size = new Size(180, 23);
             comboBox1.TabIndex = 15;
             // 
             // Column1
@@ -149,7 +150,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1143, 750);
             Controls.Add(dataGridView1);
             Controls.Add(textBox1);
             Controls.Add(comboBox1);
